@@ -1,0 +1,39 @@
+[project]
+name = "tasktual"
+version = "0.0.1"
+description = "A TUI App for Taskwarrior"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+keywords = ["tui", "cli", "productivity", "task", "management", "todo", "taskmanagement"]
+authors = [
+    {name = "Karsten Schulz", email = "ks@kaschu.one"},
+]
+
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Terminals",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "tasklib~=2.5",
+    "textual~=0.19"
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit~=3.2","black[d]~=23.3"]
+test = ["pytest~=7.0", "pytest-cov[all]"]
+
+[project.urls]
+repository = "https://github.com/KarstenSchulz/tasktual"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

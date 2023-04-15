@@ -1,4 +1,6 @@
 .DS_Store
 .idea/
+/.python-version
 __pycache__/
+tasktual.egg-info/
 venv/
