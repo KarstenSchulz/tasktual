@@ -28,10 +28,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-test = [
-  "pytest~=7.0",
-  "pytest-cov[all]"
-]
+dev = ["pre-commit~=3.2","black[d]~=23.3"]
+test = ["pytest~=7.0", "pytest-cov[all]"]
 
 [project.urls]
 repository = "https://github.com/KarstenSchulz/tasktual"
